@@ -9,6 +9,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.roomexample5.DB.TestDB
 import com.example.roomexample5.DataEntity.TextEntity
 import com.example.roomexample5.DataEntity.WordEntity
+import com.example.roomexample5.Repository.Repository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -26,21 +27,25 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val wordList : LiveData<List<WordEntity>>
         get() = _wordList
 
+    val repository = Repository(context)
     fun getData() = viewModelScope.launch(Dispatchers.IO) {
         Log.d("MainViewModel", db.textDao().getAllData().toString())
         Log.d("MainViewModel", db.wordDao().getAllData().toString())
-        _textList.postValue(db.textDao().getAllData())
-        _wordList.postValue(db.wordDao().getAllData())
+        _textList.postValue(repository.getTextList())
     }
 
     fun insertData(text : String) = viewModelScope.launch(Dispatchers.IO) {
-        db.textDao().insert(TextEntity(0, text))
-        db.wordDao().insert(WordEntity(0, text))
+//        db.textDao().insert(TextEntity(0, text))
+//        db.wordDao().insert(WordEntity(0, text))
+//
+        repository.insert(text)
     }
 
 
     fun delete() = viewModelScope.launch(Dispatchers.IO) {
-        db.textDao().deleteAllData()
-        db.wordDao().deleteAllData()
+//        db.textDao().deleteAllData()
+//        db.wordDao().deleteAllData()
+
+        repository.delete()
     }
 }
