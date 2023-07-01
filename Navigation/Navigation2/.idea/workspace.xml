@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="295d6348-26e5-44f1-809e-f60562d799a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Navigation3/app/src/main/res/navigation/nav_test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Binding/DataBinding/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Binding/DataBinding/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Binding/DataBinding/.idea/compiler.xml" beforeDir="false" />
@@ -332,7 +331,7 @@
       <change beforePath="$PROJECT_DIR$/../../LiveData/gradlew" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LiveData/gradlew.bat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LiveData/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigation/BlankFragment2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/navigation/BlankFragment2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Retrofit2/Retrofit/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Retrofit2/Retrofit/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Retrofit2/Retrofit/.idea/compiler.xml" beforeDir="false" />
@@ -644,15 +643,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/sul/Git/Navigation/Navigation2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sul/Git/Navigation/Navigation2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Navigation.app.main" />
@@ -708,9 +707,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
