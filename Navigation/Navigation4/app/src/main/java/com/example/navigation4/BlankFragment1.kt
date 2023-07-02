@@ -43,30 +43,21 @@ class BlankFragment1 : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_blank1, container, false)
 
+        //sfae srgs
+//        val action  = BlankFragment1Directions.actionBlankFragment1ToBlankFragment2("abcdef")
+
+        //만약 데이터를 넘기지 않는다면 = 디폴트값이 넘어감
+        val action  = BlankFragment1Directions.actionBlankFragment1ToBlankFragment2()
+
+        
         view.findViewById<Button>(R.id.btn1).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_blankFragment1_to_blankFragment2)
+//            Navigation.findNavController(view).navigate(R.id.action_blankFragment1_to_blankFragment2)
+
+            //데이터 전달
+            Navigation.findNavController(view).navigate(action)
         }
 
         return view
         }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment BlankFragment1.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            BlankFragment1().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
 }
