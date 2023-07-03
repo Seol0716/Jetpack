@@ -49,7 +49,7 @@ class BlankFragment1 : Fragment() {
         //만약 데이터를 넘기지 않는다면 = 디폴트값이 넘어감
         val action  = BlankFragment1Directions.actionBlankFragment1ToBlankFragment2()
 
-        
+
         view.findViewById<Button>(R.id.btn1).setOnClickListener {
 //            Navigation.findNavController(view).navigate(R.id.action_blankFragment1_to_blankFragment2)
 
